@@ -16,21 +16,6 @@ public class RemoveAllCharacter {
      */
     public String removeAll(String str, String ch) {
 
-        StringBuilder result = new StringBuilder();
-
-        char tag = ch.charAt(0);
-
-        for (int i = 0; i < str.length(); i++) {
-            
-            if (str.charAt(i) != tag) {
-
-                result.append(str.charAt(i));
-            } else {
-
-            }
-
-        }
-        return result.toString();
-
+       return str.toString().replaceAll(ch,"");
     }
 }
